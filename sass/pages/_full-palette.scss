@@ -19,7 +19,7 @@
         margin-left: 0rem;
         margin-right: 0;
         font-size: 2.5rem;
-    }   
+    }
 }
 
 .restaurant-img {
@@ -29,7 +29,7 @@
 }
 
 .restaurant {
-    background-color: lightgreen;
+    background-color: darken(whitesmoke, 5%);
     margin-top: -5rem;
     position: relative;
     border-top-left-radius: 45px;
@@ -39,9 +39,10 @@
     &__course {
         font-size: 1.8rem;
         font-weight: 300;
-        background-color: lightcoral;
+        // background-color: lightcoral;
         width: max-content;
         margin-left: 2rem;
+        margin-top: 3rem;
     }
 }
 
@@ -66,7 +67,7 @@ hr {
         font-family: 'Shrikhand';
         font-weight: 300;
         font-size: 3rem;
-        background: lightcoral;
+        // background: lightcoral;
     }
 
     i {
@@ -79,12 +80,12 @@ hr {
 
 .menu {
     @include flex;
-    background: lightgrey;
+    // background: lightgrey;
     margin-bottom: 5rem;
 }
 
 .menu-item {
-    background: lightsalmon;
+    background: darken(#fff, 5%);
     color: black;
     padding: 1.5rem;
     width: 85vw;
@@ -95,7 +96,7 @@ hr {
 
     &__dish {
         font-weight: bold;
-        background-color: lightblue;
+        // background-color: lightblue;
         margin-bottom: 1rem;
     }
 
@@ -116,9 +117,9 @@ hr {
 }
 
 .btn {
-    
+
     @include flex;
-    background-color: grey;
+    // background-color: grey;
     margin-bottom: 7rem;
 
     &__order {
@@ -126,7 +127,7 @@ hr {
         color: #fff;
         font-size: 2rem;
         padding: 2rem;
-        width: 50vw;
+        width: 55vw;
         border-radius: 40px;
         border-width: 0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
