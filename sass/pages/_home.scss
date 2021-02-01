@@ -1,0 +1,170 @@
+.sitename {
+    font-weight: 300;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.home-info {
+
+    margin-bottom: 6rem;
+
+    &__location {
+        text-align: center;
+        background-color: lightgrey;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        padding: 3rem;
+        background: lightblue;
+    }
+
+    &__subtitle {
+        text-align: center;
+        padding: 3rem;
+        background: lightpink;
+    }
+
+    &__explore {
+        text-align: center;
+        background: lightgreen;
+        object-fit: contain;
+        padding: 4rem;
+        padding-bottom: 6rem;
+
+    }
+    
+    i {
+        margin-right: 1.5rem;
+    }
+
+}
+
+.explore-link {
+    background: $primary-color;
+    padding: 2rem;
+    border-radius: 36px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.instructions {
+    @include flex;
+    margin-bottom: 5rem;
+
+    h3 {
+        align-self: flex-start;
+        margin-left: 2rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.number {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    margin-left: -30px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+
+.instruction-item {
+    display: flex;
+    background: whitesmoke;
+    padding: 2rem;
+    width: 78vw;
+    margin: 1rem;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px lightgrey;
+
+    &__text {
+        font-weight: bold;
+        font-size: 1.8rem;
+        align-self: center;
+    }
+
+    i {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        align-self: center;
+        color: #5D5B5B;
+
+    }
+
+    .fas.fa-mobile-alt {
+        margin-right: 2.7rem;
+    }
+}
+
+.nav {
+    @include flex;
+
+    background: darken(whitesmoke, 2%);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 2.5rem;
+
+    h3 {
+        align-self: flex-start;
+        margin-left: 2.5rem;
+        margin-bottom: 2.5rem;
+        margin-top: 4rem;
+    }
+
+    &__link {
+        width: 88vw;
+        // height: 60vh;
+        max-height: 28rem;
+        background-color: white;
+        margin-bottom: 3rem;
+        border-radius: 20px;
+        padding-bottom: 1rem;
+        color: black;
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &__restaurant-img {
+        width: 88vw;
+        height: 21vh;
+        max-height: 20rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit:fill;
+    }
+
+    &__rest-name {
+        // background-color: lightcoral;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    &__rest-location {
+        // background-color: lightseagreen;
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+
+    &__rest-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .far.fa-heart {
+        margin-right: 2.5rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
+        font-size: 1.3em;
+    }
+}
+

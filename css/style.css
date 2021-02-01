@@ -1,0 +1,359 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.sitename {
+  font-family: "Shrikhand";
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+header {
+  background: #fff;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  background-color: #393534;
+  color: whitesmoke;
+  padding-bottom: 5rem;
+}
+.info__title {
+  font-family: "Shrikhand";
+  margin: 3rem;
+  color: #e6e6e6;
+  letter-spacing: 2px;
+  font-weight: 0;
+}
+.info a {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 1rem 3rem;
+}
+.info .fas.fa-utensils {
+  margin-right: 2rem;
+}
+.info .fas.fa-hands-helping {
+  margin-right: 1rem;
+}
+
+.sitename {
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 1.5rem;
+}
+
+.home-info {
+  margin-bottom: 6rem;
+}
+.home-info__location {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.home-info__title {
+  text-align: center;
+  font-weight: 700;
+  padding: 3rem;
+  background: lightblue;
+}
+.home-info__subtitle {
+  text-align: center;
+  padding: 3rem;
+  background: lightpink;
+}
+.home-info__explore {
+  text-align: center;
+  background: lightgreen;
+  object-fit: contain;
+  padding: 4rem;
+  padding-bottom: 6rem;
+}
+.home-info i {
+  margin-right: 1.5rem;
+}
+
+.explore-link {
+  background: #9356DC;
+  padding: 2rem;
+  border-radius: 36px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.instructions h3 {
+  align-self: flex-start;
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.number {
+  background-color: #9356DC;
+  color: #fff;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  margin-left: -30px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.instruction-item {
+  display: flex;
+  background: whitesmoke;
+  padding: 2rem;
+  width: 78vw;
+  margin: 1rem;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+.instruction-item__text {
+  font-weight: bold;
+  font-size: 1.8rem;
+  align-self: center;
+}
+.instruction-item i {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  align-self: center;
+  color: #5D5B5B;
+}
+.instruction-item .fas.fa-mobile-alt {
+  margin-right: 2.7rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f0f0;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 2.5rem;
+}
+.nav h3 {
+  align-self: flex-start;
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 4rem;
+}
+.nav__link {
+  width: 88vw;
+  max-height: 28rem;
+  background-color: white;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+  padding-bottom: 1rem;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nav__restaurant-img {
+  width: 88vw;
+  height: 21vh;
+  max-height: 20rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: fill;
+}
+.nav__rest-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem;
+  margin-top: 1.5rem;
+}
+.nav__rest-location {
+  font-size: 1.6rem;
+  margin: 1rem;
+}
+.nav__rest-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav .far.fa-heart {
+  margin-right: 2.5rem;
+  margin-bottom: 1.5rem;
+  align-self: center;
+  font-size: 1.3em;
+}
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.palette__sitename {
+  font-family: "Shrikhand";
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 1.5rem;
+  margin-right: 6rem;
+}
+.palette .fas.fa-arrow-left {
+  color: black;
+  margin-left: 0rem;
+  margin-right: 0;
+  font-size: 2.5rem;
+}
+
+.restaurant-img {
+  width: 100vw;
+  height: 30vh;
+  max-height: 40rem;
+}
+
+.restaurant {
+  background-color: lightgreen;
+  margin-top: -5rem;
+  position: relative;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+.restaurant__course {
+  font-size: 1.8rem;
+  font-weight: 300;
+  background-color: lightcoral;
+  width: max-content;
+  margin-left: 2rem;
+}
+
+hr {
+  height: 3px;
+  color: black;
+  background-color: black;
+  width: 12vw;
+  margin: 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.title__name {
+  font-family: "Shrikhand";
+  font-weight: 300;
+  font-size: 3rem;
+  background: lightcoral;
+}
+.title i {
+  align-self: center;
+  margin-right: 1rem;
+  color: black;
+  font-size: 3rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lightgrey;
+  margin-bottom: 5rem;
+}
+
+.menu-item {
+  background: lightsalmon;
+  color: black;
+  padding: 1.5rem;
+  width: 85vw;
+  margin: 1rem;
+  border-radius: 16px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.menu-item__dish {
+  font-weight: bold;
+  background-color: lightblue;
+  margin-bottom: 1rem;
+}
+.menu-item__extra {
+  font-size: 1.7rem;
+}
+.menu-item__price {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.menu-item-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+  margin-bottom: 7rem;
+}
+.btn__order {
+  background-color: #9356DC;
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem;
+  width: 50vw;
+  border-radius: 40px;
+  border-width: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn__order:hover {
+  background-color: #bc95e9;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.btn__order:focus {
+  outline: none;
+}
+.btn__order:active {
+  outline: none;
+  border: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

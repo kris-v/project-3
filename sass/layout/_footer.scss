@@ -1,0 +1,35 @@
+.info {
+   
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    background-color: #393534;
+    color: whitesmoke;
+    padding-bottom: 5rem;
+
+    &__title {
+        font-family: 'Shrikhand';
+        margin: 3rem;
+        color: darken(white, 10%);
+        letter-spacing: 2px;
+        font-weight: 00;
+    }
+
+
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+        margin: 1rem 3rem;
+    }
+
+    .fas.fa-utensils {
+        margin-right: 2rem;
+    }
+
+    .fas.fa-hands-helping {
+        margin-right: 1rem;
+    }
+    
+}
+
