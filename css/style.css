@@ -34,6 +34,151 @@ h3 {
   font-weight: 400;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .home .instructions {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+  .home .instructions h3 {
+    align-self: center;
+  }
+  .home .nav h3 {
+    align-self: center;
+  }
+  .home .nav .new {
+    width: 20%;
+  }
+
+  .instruction-item {
+    max-width: 45%;
+  }
+  .instruction-item p {
+    font-size: 2rem;
+  }
+
+  .nav .nav__link {
+    width: 45%;
+    min-width: 55vw;
+    height: 60vh;
+    margin-bottom: 7rem;
+  }
+  .nav .nav__restaurant-img {
+    width: 100%;
+    height: 45vh;
+  }
+  .nav p {
+    font-size: 2.5rem;
+  }
+  .nav .nav__link .far.fa-heart {
+    font-size: 3.5rem;
+  }
+
+  .restaurant-img {
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .restaurant {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .restaurant .menu {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .restaurant .menu .menu-item {
+    width: 40%;
+  }
+
+  .btn {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .btn button {
+    width: 100%;
+  }
+
+  .info {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .instructions {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+  .home .instructions h3 {
+    align-self: center;
+  }
+  .home .nav h3 {
+    align-self: center;
+  }
+  .home .nav .new {
+    width: 20%;
+  }
+
+  .instruction-item {
+    max-width: 30%;
+  }
+  .instruction-item p {
+    font-size: 2rem;
+  }
+
+  .nav .nav__link {
+    width: 45%;
+    height: 60vh;
+    margin-bottom: 7rem;
+  }
+  .nav .nav__restaurant-img {
+    width: 100%;
+    height: 45vh;
+  }
+  .nav p {
+    font-size: 2.5rem;
+  }
+  .nav .nav__link .far.fa-heart {
+    font-size: 3.5rem;
+  }
+
+  .restaurant-img {
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .restaurant {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .restaurant .menu {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .restaurant .menu .menu-item {
+    width: 40%;
+  }
+
+  .btn {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .btn button {
+    width: 100%;
+  }
+
+  .info {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+}
 header {
   background: #fff;
   text-align: center;
@@ -53,12 +198,12 @@ header {
   margin: 3rem;
   color: #e6e6e6;
   letter-spacing: 2px;
-  font-weight: 0;
 }
 .info a {
   color: whitesmoke;
   text-decoration: none;
   margin: 1rem 3rem;
+  width: fit-content;
 }
 .info .fas.fa-utensils {
   margin-right: 2rem;
@@ -180,7 +325,6 @@ header {
 }
 .nav__link {
   width: 88vw;
-  max-height: 28rem;
   background-color: white;
   margin-bottom: 3rem;
   border-radius: 20px;
@@ -191,7 +335,12 @@ header {
   position: relative;
 }
 .nav__link .new {
-  background-color: lightblue;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  width: 18vw;
+  border-radius: 2px;
+  font-weight: 500;
+  text-align: center;
   padding: 5px;
   position: absolute;
   top: 10px;
@@ -200,7 +349,6 @@ header {
 .nav__restaurant-img {
   width: 88vw;
   height: 21vh;
-  max-height: 20rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: fill;
@@ -225,6 +373,7 @@ header {
   margin-bottom: 1.5rem;
   align-self: center;
   font-size: 1.3em;
+  color: #666666;
 }
 
 .palette {
@@ -239,11 +388,11 @@ header {
   font-weight: 300;
   font-size: 3rem;
   padding: 1.5rem;
-  margin-right: 6rem;
+  margin: 0 auto;
 }
 .palette .fas.fa-arrow-left {
   color: black;
-  margin-left: 0rem;
+  margin-left: 3rem;
   margin-right: 0;
   font-size: 2.5rem;
 }
@@ -268,15 +417,14 @@ header {
   margin-left: 2rem;
   margin-top: 3rem;
 }
-
-hr {
-  height: 3px;
-  color: black;
-  background-color: black;
+.restaurant__course:after {
+  content: "";
+  display: block;
+  position: relative;
   width: 12vw;
-  margin: 1rem;
-  margin-left: 2rem;
-  border-radius: 5px;
+  border-bottom: 5px solid #99E2D0;
+  border-radius: 2px;
+  margin-top: 8px;
 }
 
 .title {
@@ -293,7 +441,7 @@ hr {
 .title i {
   align-self: center;
   margin-right: 1rem;
-  color: black;
+  color: #666666;
   font-size: 3rem;
 }
 
