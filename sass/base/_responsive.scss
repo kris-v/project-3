@@ -1,120 +1,35 @@
-// @include media-s {
-
-//     .home {
-//         .instructions {
-//             width: 100%;
-//             margin: 0 auto;
-//             padding-bottom: 4rem;
-    
-//             h3 {
-//                 align-self: center;
-//             }
-//         }
-
-//         .nav {
-
-//             h3 {
-//                 align-self: center;
-//             }
-
-//             .new {
-//                 width: 20%;
-//             }
-//         }
-//     }
-    
-
-//     .instruction-item {
-//         max-width: 65%;
-
-//         p {
-//             font-size: 2rem;
-//         }
-//     }
-
-//     .nav {
-
-//         .nav__link {
-//             width: 45%;
-//             min-width: 70vw;
-//             height: 60vh;
-//             margin-bottom: 7rem;
-//         }
-
-//         .nav__restaurant-img {
-//             width: 100%;
-//             height: 45vh;
-//         }
-
-//         p {
-//             font-size: 2.5rem;
-//         }
-
-//         .nav__link {
-//             .far.fa-heart {
-//                 font-size: 3.5rem;
-//             }
-//         }
-
-//     }
-
-//     .restaurant-img {
-//         background-size: cover;
-//         height: 100vh;
-//     }
-
-//     .restaurant {
-//         width: 100%;
-//         margin: 0 auto;
-
-//         .menu {
-//             width: 100%;
-//             flex-direction: row;
-//             flex-wrap: wrap;
-//             justify-content: space-around;
-            
-//             .menu-item {
-//                 width: 40%;
-//             }
-//         }
-//     }
-
-//     .btn {
-//         width: 30%;
-//         margin: 0 auto;
-
-//     button {
-//         width: 100%;
-//         }
-
-//     }
-
-//     .info {
-//         flex-direction: row;
-//         width: 100%;
-//         align-items: center;
-//     }
-
-// }
-
-
-
-
-
-
-
-
-
 @include media-md {
 
+
+    header {
+        .sitename {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+    }
+        
+
     .home {
-        .instructions {
-            width: 100%;
+
+        .home-info__location {
+            background: whitesmoke;
+            height: 1.5rem;
+            width: 30%;
+            max-width: 200px;
             margin: 0 auto;
-            padding-bottom: 4rem;
-    
+            border-radius: 10px;
+            border-top: 2px solid lightgrey;
+        }
+
+        .instructions {
+
             h3 {
                 align-self: center;
+            }
+
+            .instruction-item {
+                min-width: 200px;
+                max-width: 300px;
             }
         }
 
@@ -124,84 +39,81 @@
                 align-self: center;
             }
 
-            .new {
-                width: 20%;
+            .nav__link {
+                width: 70%;
+                max-width: 450px;
+                max-height: 320px;
+                height: 50vh;
+                min-height: 280px;
+
+                .new {
+                    max-width: 70px;
+                }
             }
-        }
-    }
-    
 
-    .instruction-item {
-        max-width: 45%;
-
-        p {
-            font-size: 2rem;
-        }
-    }
-
-    .nav {
-
-        .nav__link {
-            width: 45%;
-            min-width: 55vw;
-            height: 60vh;
-            margin-bottom: 7rem;
-        }
-
-        .nav__restaurant-img {
-            width: 100%;
-            height: 45vh;
-        }
-
-        p {
-            font-size: 2.5rem;
-        }
-
-        .nav__link {
-            .far.fa-heart {
-                font-size: 3.5rem;
+            .nav__restaurant-img {
+                width: 100%;
+                height: 75%;
             }
+
         }
 
+        .info {
+            align-items: center;
+        }
     }
 
     .restaurant-img {
+        width: 90%;
+        height: 85%;
+        max-height: 600px;
+        position: relative;
+        z-index: 100;
         background-size: cover;
-        height: 100vh;
+        overflow: hidden;
     }
+        .restaurant {
 
-    .restaurant {
-        width: 100%;
-        margin: 0 auto;
-
-        .menu {
             width: 100%;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            
-            .menu-item {
+
+            .title__name {
+                align-self: center;
+                margin: 0 auto;
+            }
+
+            background-color: darken(whitesmoke, 5%);
+            position: absolute;
+            z-index: 500;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+
+            .restaurant__course {
+                align-self: center;
+                margin: 0 auto;
+
+                &:after {
+                    width: fit-content;
+                    border-bottom: 2px solid black;
+                }
+            }
+
+            .menu {
+                max-width: 100%;
+                .menu-item {
+                    width: 50%;
+                    max-width: 350px;
+                }
+            }
+
+            .btn__order {
                 width: 40%;
+                max-width: 210px;
+            }
+
+            .info {
+                align-items: center;
             }
         }
-    }
-
-    .btn {
-        width: 30%;
-        margin: 0 auto;
-
-    button {
-        width: 100%;
-        }
-
-    }
-
-    .info {
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-    }
-
 }
 
 
@@ -211,112 +123,22 @@
 
 
 
+@include media-s {
 
-
-@include media-lg {
-
-    .home {
-        .instructions {
-            width: 100%;
-            margin: 0 auto;
-            padding-bottom: 4rem;
-    
-            h3 {
-                align-self: center;
-            }
-        }
-
-        .nav {
-
-            h3 {
-                align-self: center;
-            }
-
-            .new {
-                width: 20%;
-            }
-        }
-    }
-    
-
-    .instruction-item {
-        max-width: 30%;
-
-        p {
-            font-size: 2rem;
-        }
+    html {
+        font-size: 0.5em;
     }
 
-    .nav {
-
-        .nav__link {
-            width: 45%;
-            height: 60vh;
-            margin-bottom: 7rem;
-        }
-
-        .nav__restaurant-img {
-            width: 100%;
-            height: 45vh;
-        }
-
-        p {
-            font-size: 2.5rem;
-        }
-
-        .nav__link {
-            .far.fa-heart {
-                font-size: 3.5rem;
-            }
-        }
-
+    .explore-link {
+        font-size: 1.5rem;
     }
 
-    .restaurant-img {
-        background-size: cover;
-        height: 100vh;
-    }
+    .instructions {
 
-    .restaurant {
-        width: 100%;
-        margin: 0 auto;
+        .instruction-item {
 
-        .menu {
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            
-            .menu-item {
-                width: 40%;
-            }
+            p {font-size: 1.5rem;}
+        
         }
     }
-
-    .btn {
-        width: 30%;
-        margin: 0 auto;
-
-    button {
-        width: 100%;
-        }
-
-    }
-
-    .info {
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-    }
-
 }
-
-
-
-
-
-
-
-
-
-

@@ -11,6 +11,7 @@
     &__location {
         text-align: center;
         background-color: lightgrey;
+        border-top: 1.5px solid gray;
         padding: 1.5rem;
         font-size: 1.5rem;
         font-weight: normal;
@@ -20,18 +21,18 @@
         text-align: center;
         font-weight: 700;
         padding: 3rem;
-        background: lightblue;
+        // background: lightblue;
     }
 
     &__subtitle {
         text-align: center;
         padding: 3rem;
-        background: lightpink;
+        // background: lightpink;
     }
 
     &__explore {
         text-align: center;
-        background: lightgreen;
+        // background: lightgreen;
         object-fit: contain;
         padding: 4rem;
         padding-bottom: 6rem;
@@ -52,6 +53,10 @@
     color: #fff;
     font-weight: normal;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover {
+        background-color: lighten($primary-color, 5%);
+    }
 }
 
 .instructions {
@@ -136,6 +141,10 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         position: relative;
 
+        &:hover {
+            color: lighten(black, 45%);
+        }
+
         .new {
             background-color: $tertiary-color;
             color: darken($tertiary-color, 35%);
@@ -153,7 +162,7 @@
 
     &__restaurant-img {
         width: 88vw;
-        height: 21vh;
+        height: 22vh;
         // max-height: 20rem;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;

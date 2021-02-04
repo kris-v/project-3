@@ -34,149 +34,105 @@ h3 {
   font-weight: 400;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .home .instructions {
-    width: 100%;
+@media screen and (min-width: 480px) {
+  header .sitename {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .home .home-info__location {
+    background: whitesmoke;
+    height: 1.5rem;
+    width: 30%;
+    max-width: 200px;
     margin: 0 auto;
-    padding-bottom: 4rem;
+    border-radius: 10px;
+    border-top: 2px solid lightgrey;
   }
   .home .instructions h3 {
     align-self: center;
   }
+  .home .instructions .instruction-item {
+    min-width: 200px;
+    max-width: 300px;
+  }
   .home .nav h3 {
     align-self: center;
   }
-  .home .nav .new {
-    width: 20%;
+  .home .nav .nav__link {
+    width: 70%;
+    max-width: 450px;
+    max-height: 320px;
+    height: 50vh;
+    min-height: 280px;
   }
-
-  .instruction-item {
-    max-width: 45%;
+  .home .nav .nav__link .new {
+    max-width: 70px;
   }
-  .instruction-item p {
-    font-size: 2rem;
-  }
-
-  .nav .nav__link {
-    width: 45%;
-    min-width: 55vw;
-    height: 60vh;
-    margin-bottom: 7rem;
-  }
-  .nav .nav__restaurant-img {
+  .home .nav .nav__restaurant-img {
     width: 100%;
-    height: 45vh;
+    height: 75%;
   }
-  .nav p {
-    font-size: 2.5rem;
-  }
-  .nav .nav__link .far.fa-heart {
-    font-size: 3.5rem;
+  .home .info {
+    align-items: center;
   }
 
   .restaurant-img {
+    width: 90%;
+    height: 85%;
+    max-height: 600px;
+    position: relative;
+    z-index: 100;
     background-size: cover;
-    height: 100vh;
+    overflow: hidden;
   }
 
   .restaurant {
     width: 100%;
+    background-color: #e8e8e8;
+    position: absolute;
+    z-index: 500;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+  }
+  .restaurant .title__name {
+    align-self: center;
     margin: 0 auto;
+  }
+  .restaurant .restaurant__course {
+    align-self: center;
+    margin: 0 auto;
+  }
+  .restaurant .restaurant__course:after {
+    width: fit-content;
+    border-bottom: 2px solid black;
   }
   .restaurant .menu {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    max-width: 100%;
   }
   .restaurant .menu .menu-item {
+    width: 50%;
+    max-width: 350px;
+  }
+  .restaurant .btn__order {
     width: 40%;
+    max-width: 210px;
   }
-
-  .btn {
-    width: 30%;
-    margin: 0 auto;
-  }
-  .btn button {
-    width: 100%;
-  }
-
-  .info {
-    flex-direction: row;
-    width: 100%;
+  .restaurant .info {
     align-items: center;
   }
 }
-@media screen and (min-width: 1024px) {
-  .home .instructions {
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 4rem;
-  }
-  .home .instructions h3 {
-    align-self: center;
-  }
-  .home .nav h3 {
-    align-self: center;
-  }
-  .home .nav .new {
-    width: 20%;
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 0.5em;
   }
 
-  .instruction-item {
-    max-width: 30%;
-  }
-  .instruction-item p {
-    font-size: 2rem;
+  .explore-link {
+    font-size: 1.5rem;
   }
 
-  .nav .nav__link {
-    width: 45%;
-    height: 60vh;
-    margin-bottom: 7rem;
-  }
-  .nav .nav__restaurant-img {
-    width: 100%;
-    height: 45vh;
-  }
-  .nav p {
-    font-size: 2.5rem;
-  }
-  .nav .nav__link .far.fa-heart {
-    font-size: 3.5rem;
-  }
-
-  .restaurant-img {
-    background-size: cover;
-    height: 100vh;
-  }
-
-  .restaurant {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .restaurant .menu {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .restaurant .menu .menu-item {
-    width: 40%;
-  }
-
-  .btn {
-    width: 30%;
-    margin: 0 auto;
-  }
-  .btn button {
-    width: 100%;
-  }
-
-  .info {
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
+  .instructions .instruction-item p {
+    font-size: 1.5rem;
   }
 }
 header {
@@ -205,6 +161,9 @@ header {
   margin: 1rem 3rem;
   width: fit-content;
 }
+.info a:hover {
+  color: #9c9c9c;
+}
 .info .fas.fa-utensils {
   margin-right: 2rem;
 }
@@ -224,6 +183,7 @@ header {
 .home-info__location {
   text-align: center;
   background-color: lightgrey;
+  border-top: 1.5px solid gray;
   padding: 1.5rem;
   font-size: 1.5rem;
   font-weight: normal;
@@ -232,16 +192,13 @@ header {
   text-align: center;
   font-weight: 700;
   padding: 3rem;
-  background: lightblue;
 }
 .home-info__subtitle {
   text-align: center;
   padding: 3rem;
-  background: lightpink;
 }
 .home-info__explore {
   text-align: center;
-  background: lightgreen;
   object-fit: contain;
   padding: 4rem;
   padding-bottom: 6rem;
@@ -258,6 +215,9 @@ header {
   color: #fff;
   font-weight: normal;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.explore-link:hover {
+  background-color: #a16be0;
 }
 
 .instructions {
@@ -334,6 +294,9 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
 }
+.nav__link:hover {
+  color: #737373;
+}
 .nav__link .new {
   background-color: #99E2D0;
   color: #2c9c81;
@@ -348,7 +311,7 @@ header {
 }
 .nav__restaurant-img {
   width: 88vw;
-  height: 21vh;
+  height: 22vh;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: fill;
@@ -399,8 +362,6 @@ header {
 
 .restaurant-img {
   width: 100vw;
-  height: 30vh;
-  max-height: 40rem;
 }
 
 .restaurant {
@@ -497,7 +458,7 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn__order:hover {
-  background-color: #bc95e9;
+  background-color: #a16be0;
   text-decoration: none;
   cursor: pointer;
   border: none;

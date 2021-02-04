@@ -21,6 +21,10 @@
         text-decoration: none;
         margin: 1rem 3rem;
         width: fit-content;
+
+        &:hover {
+            color: darken(whitesmoke, 35%);
+        }
     }
 
     .fas.fa-utensils {

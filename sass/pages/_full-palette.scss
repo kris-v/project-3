@@ -24,8 +24,8 @@
 
 .restaurant-img {
     width: 100vw;
-    height: 30vh;
-    max-height: 40rem;
+    // height: 30vh;
+    // max-height: 40rem;
 }
 
 .restaurant {
@@ -48,7 +48,6 @@
             content: '';
             display: block;
             position: relative;
-            // width: 60%;
             width: 12vw;
             border-bottom: 5px solid $tertiary-color;
             border-radius: 2px;
@@ -134,7 +133,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         &:hover {
-            background-color: lighten($primary-color, 15%);
+            background-color: lighten($primary-color, 5%);
             text-decoration: none;
             cursor: pointer;
             border: none;
