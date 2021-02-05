@@ -36,7 +36,7 @@ h3 {
 
 @media screen and (min-width: 480px) {
   .restaurant-page {
-    overflow-x: hidden;
+    width: 100vw;
   }
 
   header .sitename {
@@ -83,7 +83,7 @@ h3 {
 
   .restaurant-img {
     width: 85%;
-    height: 85%;
+    height: auto;
     max-height: 600px;
     position: relative;
     z-index: 100;
@@ -112,10 +112,10 @@ h3 {
   }
   .restaurant .restaurant__course:after {
     width: fit-content;
-    border-bottom: 2px solid black;
+    border-bottom: 0px;
   }
   .restaurant .menu {
-    max-width: 100%;
+    width: 100%;
   }
   .restaurant .menu .menu-item {
     width: 50%;
@@ -367,8 +367,12 @@ header {
   font-size: 2.5rem;
 }
 
+.restaurant-page {
+  width: 100%;
+}
+
 .restaurant-img {
-  width: 100vw;
+  width: 100%;
 }
 
 .restaurant {
@@ -377,6 +381,7 @@ header {
   position: relative;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
+  width: 100%;
 }
 .restaurant__course {
   font-size: 1.8rem;
