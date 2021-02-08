@@ -215,16 +215,13 @@ header {
 }
 
 .explore-link {
-  background: #9356DC;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   padding: 2rem;
   border-radius: 36px;
   text-decoration: none;
   color: #fff;
   font-weight: normal;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.explore-link:hover {
-  background-color: #a16be0;
 }
 
 .instructions {
@@ -254,6 +251,7 @@ header {
   padding: 2rem;
   width: 78vw;
   margin: 1rem;
+  cursor: pointer;
   border-radius: 16px;
   box-shadow: 5px 5px 5px lightgrey;
 }
@@ -431,6 +429,7 @@ header {
   padding: 1.5rem;
   width: 85vw;
   margin: 1rem;
+  cursor: pointer;
   border-radius: 16px;
   text-decoration: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -460,7 +459,7 @@ header {
   margin-bottom: 7rem;
 }
 .btn__order {
-  background-color: #9356DC;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   color: #fff;
   font-size: 2rem;
   padding: 2rem;
@@ -470,7 +469,7 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn__order:hover {
-  background-color: #a16be0;
+  background-color: blue;
   text-decoration: none;
   cursor: pointer;
   border: none;
