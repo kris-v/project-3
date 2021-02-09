@@ -1,19 +1,25 @@
+.footer-main {
+    background-color: #393534;
+
+    &__title {
+        font-family: 'Shrikhand';
+        padding: 3rem;
+        // background-color: grey;
+        color: darken(white, 10%);
+        letter-spacing: 2px;
+    }
+
+}
+
 .info {
    
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: left;
-    background-color: #393534;
+    // background-color: lightcoral;
     color: whitesmoke;
     padding-bottom: 5rem;
-
-    &__title {
-        font-family: 'Shrikhand';
-        margin: 3rem;
-        color: darken(white, 10%);
-        letter-spacing: 2px;
-    }
 
 
     a {
@@ -21,6 +27,7 @@
         text-decoration: none;
         margin: 1rem 3rem;
         width: fit-content;
+        outline: none;
 
         &:hover {
             color: darken(whitesmoke, 35%);

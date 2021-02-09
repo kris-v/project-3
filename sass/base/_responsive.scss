@@ -1,10 +1,32 @@
 @include media-md {
 
-
+    body {
+        width: 100%;
+    }
 
     .restaurant-page {
-        width: 100vw;
-        // overflow-x: hidden;
+        width: 100%;
+        
+
+
+        .footer-main {
+            text-align: center;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        .info {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+            // background-color: blue;
+            padding-bottom: 2rem;
+
+            a {
+                // background-color: black;
+            }
+        }
 
     }
 
@@ -42,11 +64,26 @@
             }
         }
 
-        .nav {
+
+        .test-layout {
+            flex-direction: column;
+            // background-color: lightcoral;
 
             h3 {
+                // background-color: lightblue;
                 align-self: center;
+                position: relative;
+                right: 1rem;
             }
+        }
+
+        .nav {
+            // background-color: lightgreen;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-bottom:5rem;
+            width: 85%;
 
             .nav__link {
                 width: 70%;
@@ -54,6 +91,10 @@
                 max-height: 320px;
                 height: 50vh;
                 min-height: 280px;
+                outline: none;
+                // background-color: lightcoral;
+                margin: 3rem;
+                margin-bottom: 5rem;
 
                 .new {
                     max-width: 70px;
@@ -67,39 +108,51 @@
 
         }
 
+        .footer-main {
+            text-align: center;
+        }
+
         .info {
+            flex-direction: row;
             align-items: center;
+            justify-content: center;
+            padding-bottom: 2rem;
+            font-size: 1.5rem;
+
         }
     }
 
 
 
         .restaurant-img {
-            width: 85%;
+            width: 100%;
             height: auto;
-            max-height: 600px;
-            position: relative;
+            position: absolute;
             z-index: 100;
             background-size: cover;
-            margin: 0;
         }
         
         .restaurant {
 
-            width: 100vw;
+            width: 100%;
             background-color: darken(whitesmoke, 5%);
-            position: absolute;
+            position: relative;
+            top: 30rem;
             z-index: 500;
+            // border-top-left-radius: 0;
+            // border-top-right-radius: 0;
             border-top-left-radius: 45px;
             border-top-right-radius: 45px;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
 
             .title__name {
                 align-self: center;
                 margin: 0 auto;
+                position: relative;
+                left: 2rem;
             }
+
 
             
 
@@ -128,6 +181,7 @@
 
             .info {
                 align-items: center;
+                font-size: 1.5rem;
             }
         }
 }

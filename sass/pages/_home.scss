@@ -50,6 +50,7 @@
     padding: 2rem;
     border-radius: 36px;
     text-decoration: none;
+    outline: none;
     color: #fff;
     font-weight: normal;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -110,13 +111,11 @@
     }
 }
 
-.nav {
+.test-layout {
     @include flex;
 
+    width: 100%;
     background: darken(whitesmoke, 2%);
-    overflow: hidden;
-    box-sizing: border-box;
-    padding-bottom: 2.5rem;
 
     h3 {
         align-self: flex-start;
@@ -124,6 +123,17 @@
         margin-bottom: 2.5rem;
         margin-top: 4rem;
     }
+}
+
+.nav {
+    @include flex;
+
+    
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 2.5rem;
+    width: 100%;
+
 
 
     &__link {
