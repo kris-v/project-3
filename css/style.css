@@ -435,6 +435,12 @@ h3 {
     padding-bottom: 2rem;
     font-size: 1.5rem;
   }
+  .home .info .fas.fa-utensils {
+    margin-right: 1rem;
+  }
+  .home .info .fas.fa-hands-helping {
+    margin-right: 1rem;
+  }
 
   .restaurant-img {
     width: 100%;
