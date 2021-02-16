@@ -8,7 +8,7 @@
 
 
 @mixin media-md {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 520px) {
         @content;
     }
 }
@@ -17,6 +17,13 @@
 
 @mixin media-s {
     @media screen and (max-width: 360px) {
+        @content;
+    }
+}
+
+
+@mixin media-int {
+    @media screen and (min-width: 480px) and (max-width: 520px) {
         @content;
     }
 }

@@ -118,7 +118,7 @@
   width: 100%;
 }
 .nav__link {
-  width: 88vw;
+  width: 88%;
   background-color: white;
   margin-bottom: 3rem;
   border-radius: 20px;
@@ -144,7 +144,7 @@
   right: 5%;
 }
 .nav__restaurant-img {
-  width: 88vw;
+  width: 100%;
   height: 22vh;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -352,7 +352,7 @@ h3 {
   font-weight: 400;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   body {
     width: 100%;
   }
@@ -418,6 +418,7 @@ h3 {
     outline: none;
     margin: 3rem;
     margin-bottom: 5rem;
+    margin-top: 0;
   }
   .home .nav .nav__link .new {
     max-width: 70px;
@@ -455,6 +456,7 @@ h3 {
     width: 100%;
     background-color: #e8e8e8;
     position: relative;
+    height: 100%;
     top: 30rem;
     z-index: 500;
     border-top-left-radius: 45px;
@@ -471,17 +473,27 @@ h3 {
   .restaurant .restaurant__course {
     align-self: center;
     margin: 0 auto;
+    position: relative;
   }
   .restaurant .restaurant__course:after {
     width: fit-content;
     border-bottom: 0px;
   }
   .restaurant .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 100%;
+    margin-bottom: 8rem;
   }
   .restaurant .menu .menu-item {
     width: 50%;
     max-width: 350px;
+    padding: 3rem;
+    margin: 3rem;
   }
   .restaurant .btn__order {
     width: 40%;
@@ -503,6 +515,14 @@ h3 {
 
   .instructions .instruction-item p {
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 520px) {
+  .nav {
+    width: 100%;
+  }
+  .nav__link {
+    width: 70%;
   }
 }
 header {
