@@ -6,9 +6,15 @@
 
 
 
+@mixin media-l {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
+
 
 @mixin media-md {
-    @media screen and (min-width: 520px) {
+    @media screen and (min-width: 480px) {
         @content;
     }
 }
@@ -22,8 +28,8 @@
 }
 
 
-@mixin media-int {
-    @media screen and (min-width: 480px) and (max-width: 520px) {
+@mixin media-ft {
+    @media screen and (min-width: 540px) {
         @content;
     }
 }

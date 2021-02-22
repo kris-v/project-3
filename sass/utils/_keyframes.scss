@@ -1,0 +1,81 @@
+@keyframes progressive {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+@keyframes price-slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        transform: rotate(0deg);
+        z-index: 50;
+    }
+    
+    100% {
+        visibility: hidden;
+        transform: rotate(360deg);
+        z-index: -10;
+    }
+}
+
+
+@keyframes show-up {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+       opacity: 1;
+       z-index: 100;
+    }
+}
+
+
+@keyframes card-slide-up {
+    0% {
+        // opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        // opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+@keyframes stack-order {
+    0% {
+        z-index: -10;
+    }
+}
+

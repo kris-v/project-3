@@ -1,9 +1,7 @@
-
 .palette {
     @include flex;
     flex-direction: row;
     justify-content: space-around;
-    // background-color: lightblue;
     position: relative;
 
     &__sitename {
@@ -14,11 +12,9 @@
         margin: 0 auto;
         position: relative;
         right: 2rem;
-        // background: lightcoral;
     }
 
     .fas.fa-arrow-left {
-        // background-color: lightblue;
         color: black;
         margin-left: 3rem;
         margin-right: 0;
@@ -33,8 +29,6 @@
 
 .restaurant-img {
     width: 100%;
-    // height: 30vh;
-    // max-height: 40rem;
 }
 
 .restaurant {
@@ -53,6 +47,16 @@
         width: max-content;
         margin-left: 2rem;
         margin-top: 3rem;
+        opacity: 0;
+        animation-name: progressive;
+        animation-duration: 1200ms;
+        animation-fill-mode: forwards;
+
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: 600ms * $i;
+            }
+        }
 
         &:after {
             content: '';
@@ -63,6 +67,7 @@
             border-radius: 2px;
             margin-top: 8px; }
     }
+
 
 }
 
@@ -102,22 +107,120 @@
     margin: 1rem;
     cursor: pointer;
     border-radius: 16px;
+    position: relative;
+    z-index: 0;
     text-decoration: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    overflow: hidden;
+    animation-name: progressive;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+
+    &:hover {
+        > .menu-item-info {
+            > .menu-item__price {
+                transform: translateX(-250%);
+            }
+            > .menu-item__extra {
+                z-index: -1;
+            }
+        }
+
+        > .check {
+            transform: translateX(-100%);
+            > i {
+                animation: spin 500ms 100ms forwards;
+            }
+        }
+
+        > .suspension {
+            transform: translateX(-210%);
+            color: black;
+        }
+    }
+
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: 300ms * $i;
+        }
+    }
 
     &__dish {
         font-weight: bold;
         // background-color: lightblue;
+        width: 75%;
         margin-bottom: 1rem;
+        position: relative;
+        font-size: 1.7rem;
+
     }
 
     &__extra {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        // background-color: lightcoral;
+        position: relative;
+        z-index: 50;
+
+        &--s {
+            font-size: 1.5rem;
+        }
     }
 
     &__price {
-        font-size: 1.7rem;
+        // background-color: lightblue;
+        font-size: 1.6rem;
         font-weight: bold;
+        transition: transform 300ms cubic-bezier(.75,.97,.79,.99);
+        transform: translateX(25%);
+        position: relative;
+        z-index: 700;
+    }
+
+    .check {
+        display: inline-block;
+        background-color: $tertiary-color;
+        padding: 3rem;
+        width: 2.2rem;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        position: absolute;
+        right: -8.6rem;
+        z-index: 1000;
+        top: 0;
+        height: 1.7rem;
+        transition: transform 300ms cubic-bezier(.75,.97,.79,.99);
+        transform: translateX(0%);
+        .fas.fa-check-circle {
+            color: #fff;
+            font-size: 3rem;
+            line-height: 1.8rem;
+            position: relative;
+            right: 0.5rem;
+
+            &--center {
+                top: 1rem;
+            };
+        }
+
+        &--tall {
+            height: 3.35rem;
+        }
+
+    }
+
+    .suspension {
+        display: inline-block;
+        color: #fff;
+        background: darken(#fff, 5%);
+        // background-color: red;
+        position: absolute;
+        z-index: 100;
+        bottom: 1.5rem;
+        width: 20%;
+        right: -8.6rem;
+        transition: transform 300ms cubic-bezier(.75,.97,.79,.99);
+        transform: translateX(0%);
     }
 }
 
@@ -141,10 +244,12 @@
         width: 55vw;
         border-radius: 40px;
         border-width: 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 1000ms;
 
         &:hover {
-            background-color: blue;;
+            opacity: 0.7;
+            box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             text-decoration: none;
             cursor: pointer;
             border: none;
@@ -159,6 +264,51 @@
             outline: none;
             border: 0px;
         }
+    }
+
+
+        .target {
+        margin-right: 2.5rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        
+        &:hover {
+            .heart1 {
+                opacity: 0;
+            }
+
+            .heart2 {
+                opacity: 100%;
+                color: $primary-color;
+            }
+        }
+
+        .heart1 {
+            opacity: 100%;
+            transition: opacity 2s;
+        }
+
+        .heart2 {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+    }
+
+    .far.fa-heart {
+        margin-right: 2.5rem;
+        align-self: center;
+        font-size: 2.4rem;
+        color: lighten(black, 40%);
+    }
+
+    .fas.fa-heart {
+        margin-right: 2.5rem;
+        align-self: center;
+        font-size: 2.4rem;
+        color: lighten(black, 40%);
     }
 
 }

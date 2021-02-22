@@ -20,6 +20,7 @@
     // background-color: lightcoral;
     color: whitesmoke;
     padding-bottom: 5rem;
+    font-size: 1.4rem;
 
 
     a {
@@ -28,6 +29,7 @@
         margin: 1rem 3rem;
         width: fit-content;
         outline: none;
+        transition: color 400ms;
 
         &:hover {
             color: darken(whitesmoke, 35%);
