@@ -192,7 +192,7 @@
                 .menu-item {
                     width: 100%;
                     max-width: 350px;
-                    margin: 3rem;
+                    margin: 4rem;
                     margin-bottom: 0;
                 }
             }
@@ -244,9 +244,98 @@
     .restaurant {
         top: 45rem;
         padding-top: 3rem;
+        
+        .restaurant__course {
+            text-align: center;
+        }
     }
 
     .horiz-layout {
         flex-wrap: wrap;
+        max-width: 80%;
+        margin: 0 auto;
     }
+}
+
+
+@include media-xl {
+
+html {
+    font-size: 1em;
+}
+
+.home {
+    // background-color: lightblue;
+
+    .home-info__location {
+        max-width: 12em;
+    }
+
+    .instructions {
+        // background-color: lightgreen;
+
+        .instruction-item {
+            max-width: 15em;
+        }
+    }
+
+    .core-layout {
+        // background-color: greenyellow;
+
+        .nav {
+            // background-color: blue;
+            max-width: 70%;
+
+            &__link {
+                width: 15em;
+                max-height: 30em;
+                // background-color: green;
+            }
+        }
+    }
+}
+
+.restaurant-img {
+position: absolute;
+object-fit: fill;
+}
+
+.restaurant-page {
+height: 100%;
+z-index: 1000;
+// background-color: lightgreen;
+}
+
+.restaurant {
+height: 100%;
+// background-color: lightblue;
+
+    .title {
+        position: relative;
+        z-index: 1000;
+    }
+}
+
+.horiz-layout {
+height: 100vh;
+max-width: 100%;
+padding-bottom: 10em;
+// background-color: lightcoral;
+
+    .menu-layout {
+        // background-color: lawngreen;
+
+        .menu {
+            width: 100%;
+            .menu-item {
+                max-width: 17em;
+            }
+        }
+    }
+ }
+
+.btn__order {
+    width: 10em;
+}
+
 }
