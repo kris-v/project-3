@@ -85,12 +85,57 @@
         // background: lightcoral;
     }
 
-    i {
+    .target {
+        margin-right: 2.5rem;
+        margin-bottom: 1.5rem;
         align-self: center;
-        margin-right: 1rem;
-        color: lighten(black, 40%);
-        font-size: 3rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        
+        &:hover {
+            .heart1 {
+                opacity: 0;
+            }
+
+            .heart2 {
+                opacity: 100%;
+                color: $primary-color;
+                cursor: pointer;
+            }
+        }
+
+        .heart1 {
+            opacity: 100%;
+            transition: opacity 2s;
+        }
+
+        .heart2 {
+            opacity: 0;
+            transition: opacity 1s;
+        }
     }
+
+    .far.fa-heart {
+        margin-right: 2.5rem;
+        align-self: center;
+        font-size: 2.4rem;
+        color: lighten(black, 40%);
+    }
+
+    .fas.fa-heart {
+        margin-right: 2.5rem;
+        align-self: center;
+        font-size: 2.4rem;
+        color: lighten(black, 40%);
+    }
+    // i {
+    //     align-self: center;
+    //     margin-right: 1rem;
+    //     color: lighten(black, 40%);
+    //     font-size: 3rem;
+    //     background-color: lightblue;
+    // }
 }
 
 .menu {
