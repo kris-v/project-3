@@ -169,6 +169,7 @@
             }
             > .menu-item__extra {
                 z-index: -1;
+                width: 70%;
             }
         }
 
@@ -177,11 +178,6 @@
             > i {
                 animation: spin 500ms 100ms forwards;
             }
-        }
-
-        > .suspension {
-            transform: translateX(-210%);
-            color: black;
         }
     }
 
@@ -194,7 +190,7 @@
     &__dish {
         font-weight: bold;
         // background-color: lightblue;
-        width: 75%;
+        width: 100%;
         margin-bottom: 1rem;
         position: relative;
         font-size: 1.7rem;
@@ -206,9 +202,15 @@
         // background-color: lightcoral;
         position: relative;
         z-index: 50;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 90%;
+        transition: width 205ms linear;
 
         &--s {
             font-size: 1.5rem;
+            // background-color: lightblue;
         }
     }
 
@@ -242,30 +244,8 @@
             line-height: 1.8rem;
             position: relative;
             right: 0.5rem;
-
-            &--center {
-                top: 1rem;
-            };
         }
 
-        &--tall {
-            height: 3.35rem;
-        }
-
-    }
-
-    .suspension {
-        display: inline-block;
-        color: #fff;
-        background: darken(#fff, 5%);
-        // background-color: red;
-        position: absolute;
-        z-index: 100;
-        bottom: 1.5rem;
-        width: 20%;
-        right: -8.6rem;
-        transition: transform 300ms cubic-bezier(.75,.97,.79,.99);
-        transform: translateX(0%);
     }
 }
 
@@ -274,6 +254,10 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+// .menu-item__extra.menu-item__extra--s {
+  
+// }
 
 .btn {
 

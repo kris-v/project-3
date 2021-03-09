@@ -460,16 +460,13 @@
 }
 .menu-item:hover > .menu-item-info > .menu-item__extra {
   z-index: -1;
+  width: 70%;
 }
 .menu-item:hover > .check {
   transform: translateX(-100%);
 }
 .menu-item:hover > .check > i {
   animation: spin 500ms 100ms forwards;
-}
-.menu-item:hover > .suspension {
-  transform: translateX(-210%);
-  color: black;
 }
 .menu-item--1 {
   animation-delay: 300ms;
@@ -503,7 +500,7 @@
 }
 .menu-item__dish {
   font-weight: bold;
-  width: 75%;
+  width: 100%;
   margin-bottom: 1rem;
   position: relative;
   font-size: 1.7rem;
@@ -512,6 +509,11 @@
   font-size: 1.6rem;
   position: relative;
   z-index: 50;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 90%;
+  transition: width 205ms linear;
 }
 .menu-item__extra--s {
   font-size: 1.5rem;
@@ -545,24 +547,6 @@
   line-height: 1.8rem;
   position: relative;
   right: 0.5rem;
-}
-.menu-item .check .fas.fa-check-circle--center {
-  top: 1rem;
-}
-.menu-item .check--tall {
-  height: 3.35rem;
-}
-.menu-item .suspension {
-  display: inline-block;
-  color: #fff;
-  background: #f2f2f2;
-  position: absolute;
-  z-index: 100;
-  bottom: 1.5rem;
-  width: 20%;
-  right: -8.6rem;
-  transition: transform 300ms cubic-bezier(0.75, 0.97, 0.79, 0.99);
-  transform: translateX(0%);
 }
 
 .menu-item-info {
